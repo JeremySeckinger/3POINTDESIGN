@@ -2408,8 +2408,8 @@ input, select, textarea {
 /* Additional Styles */
 
 .h3main {
-	font-family: 'aileronsregular';
-	-webkit-text-stroke-width: .001em;
+	font-family: 'poppins';
+	-webkit-text-stroke-width: .03em;
     -webkit-text-stroke-color: white;
 	letter-spacing: 3px;
 	font-weight: 900;
@@ -2426,11 +2426,11 @@ input, select, textarea {
 }
 
 .headerh1 {
-	font-family: 'aileronsregular';
+	font-family: 'poppins';
 }
 
 .navli {
-	font-family: 'aileronsregular';
+	font-family: 'poppins';
 }
 
 .center {
