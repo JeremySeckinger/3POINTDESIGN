@@ -2409,14 +2409,20 @@ input, select, textarea {
 
 .h3main {
 	font-family: 'aileronsregular';
+	text-shadow: 0px 10px 5px white;
+	-webkit-text-stroke-width: .001em;
+    -webkit-text-stroke-color: white;
 	letter-spacing: 3px;
 	font-weight: 900;
-	font-size: 1.75em;
-	margin-top: .5em;
+	font-size: 3.5em;
+	margin-top: .35em;
 }
 
 .companylogo {
 	font-family: 'azonixregular';
+	text-shadow: 0px -10px 8px white;
+	-webkit-text-stroke-width: .001em;
+    -webkit-text-stroke-color: white;
 	letter-spacing: 0em;
 	padding-top: .25em;
 }
@@ -2446,6 +2452,8 @@ input, select, textarea {
 /* text shadow addition for readability on titles with bright background images */
 
 .textShadow {
-	text-shadow: 2px 2px gray;
+	-webkit-text-stroke-width: .04em;
+    -webkit-text-stroke-color: white;
+	color: black;
 }
 
