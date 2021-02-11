@@ -2409,7 +2409,6 @@ input, select, textarea {
 
 .h3main {
 	font-family: 'aileronsregular';
-	text-shadow: 0px 10px 5px white;
 	-webkit-text-stroke-width: .001em;
     -webkit-text-stroke-color: white;
 	letter-spacing: 3px;
@@ -2420,7 +2419,6 @@ input, select, textarea {
 
 .companylogo {
 	font-family: 'azonixregular';
-	text-shadow: 0px -10px 8px white;
 	-webkit-text-stroke-width: .001em;
     -webkit-text-stroke-color: white;
 	letter-spacing: 0em;
@@ -2457,3 +2455,4 @@ input, select, textarea {
 	color: black;
 }
 
+/* Need to change text-shadow to text stroke for readbility */
