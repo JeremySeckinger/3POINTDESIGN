@@ -722,7 +722,7 @@ input, select, textarea {
 				border-bottom: 0;
 				border-radius: 3em 3em 0 0;
 				height: 2.5em;
-				margin-left: -2.5em;
+				margin-left: -1.25em;
 			}
 
 		input[type="button"].anchored,
@@ -1918,8 +1918,45 @@ input, select, textarea {
 						text-decoration: none;
 						height: 3em;
 						line-height: 3em;
-						padding: 0 0.5em 0 0.5em;
+						padding: 0 0.25em 0 0.25em;
 						outline: 0;
+					}
+
+/* Adding dropdown list to project archive */
+
+					.dropdown {
+						position: relative;
+						left: -.35em;
+						display: none;
+						list-style: none;
+					}
+
+
+					.dropdownList {
+						float: left;
+						border-top: 1px solid #fff;
+						width: 100%;
+						white-space: nowrap;
+						/* clear left to keep "project Archive" from moving left--missed that and this was the solve */
+						clear: left; 
+					}
+
+					.dropdownLinks {
+						display: block;
+						color: #fff;
+						background-color:rgba(46, 49, 49, .8);
+						text-align: center;
+					}
+
+					.dropdownLinks:hover {
+						text-decoration: none;
+						background-color: black;
+						position: relative;
+					}
+
+					.dropdownArrow::after {	
+						color: white;
+						content: ' ▾';
 					}
 
 		@media screen and (max-width: 736px) {
@@ -2021,6 +2058,34 @@ input, select, textarea {
 				opacity: 0;
 			}
 
+/* added featured section style */
+
+		.main.styleFeatured {
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			padding: 4.5em 0 4.5em 0;
+			overflow: hidden;
+}
+			.main.styleFeatured > .content {
+				-moz-transition: -moz-transform 1s ease;
+				-webkit-transition: -webkit-transform 1s ease;
+				-ms-transition: -ms-transform 1s ease;
+				transition: transform 1s ease;
+				-moz-transform: translateZ(0);
+				-webkit-transform: translateZ(0);
+				-ms-transform: translateZ(0);	
+				transform: translateZ(0);
+				position: relative;
+				width: 100%;
+				margin: 0;
+}
+
 		.main.style2 {
 			-moz-align-items: center;
 			-webkit-align-items: center;
@@ -2086,7 +2151,7 @@ input, select, textarea {
 			}
 
 			.main.style3.primary {
-				background: #ffffff;
+				background:  #ffffff;;
 			}
 
 			.main.style3.secondary {
@@ -2329,9 +2394,35 @@ input, select, textarea {
 		background-repeat: no-repeat;
 	}
 
-/* One */
+/* Featured */
 
-	#one {
+	#featured {
+		background: url("../../images/featured.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+	}
+
+/* Project Archive */
+
+	#projectArchive {
+		background:  url("../../images/portfolio-background.jpeg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+}
+
+/* Added to create separate page for past Archive */
+		#pastArchive {
+			background:  url("../../images/past-archive.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+
+/* Services */
+
+	#services {
 		background: url("../../images/services-background.jpg");
 		background-size: cover;
 		background-attachment: fixed;
@@ -2339,23 +2430,14 @@ input, select, textarea {
 		background-repeat: no-repeat;
 	}
 
-/* Two */
+/* about */
 
-	#two {
+	#about {
 		background:  url("../../images/about-background.jpg");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center center;
 	}
-
-/* Three */
-
-	#three {
-		background:  url("../../images/portfolio-background.jpeg");
-		background-size: cover;
-		background-attachment: fixed;
-		background-position: center center;
-}
 
 /* Contact */
 
@@ -2367,7 +2449,6 @@ input, select, textarea {
 		background-attachment: fixed;
 		background-position: center center;
 	}
-		
 
 
 		#contact .box {
@@ -2413,8 +2494,8 @@ input, select, textarea {
     -webkit-text-stroke-color: white;
 	letter-spacing: 3px;
 	font-weight: 900;
-	font-size: 3.5em;
-	margin-top: .35em;
+	font-size: 3.25em;
+	margin-top: .5em;
 }
 
 .companylogo {
@@ -2423,6 +2504,24 @@ input, select, textarea {
     -webkit-text-stroke-color: white;
 	letter-spacing: 0em;
 	padding-top: .25em;
+}
+
+/* Created div to contain hr and logo */
+
+.divwrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* replicates desired logo style with lines next to image equal to company name width */
+
+hr {
+	display: inline-block;
+	width: 14em;
+	height: .1em;
+	border: 2px solid white;
+	margin: 0 2em 0 2em;
 }
 
 .headerh1 {
@@ -2449,10 +2548,18 @@ input, select, textarea {
 
 /* text shadow addition for readability on titles with bright background images */
 
-.textShadow {
+.textStroke {
 	-webkit-text-stroke-width: .04em;
     -webkit-text-stroke-color: white;
 	color: black;
 }
 
-/* Need to change text-shadow to text stroke for readbility */
+/* featured section styling */
+
+video {
+	height: 20em;
+	width: 30em;
+	margin: 0% 2% 3% 2%;
+}
+
+

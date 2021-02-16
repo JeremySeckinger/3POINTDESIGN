@@ -15,69 +15,74 @@
 				<nav>
 					<ul class="navli">
 						<li><a href="#intro">Home</a></li>
-						<li><a href="#one">Services</a></li>
-						<li><a href="#two">About</a></li>
-						<li><a href="#three">Project Archive</a></li>
+						<li><a href="#featured">Featured</a></li>
+						<li class="dropdownMenu">
+							<a href="#projectArchive" class="dropdownArrow">Project Archive</a>
+								<ul class="dropdown">
+									<li class="dropdownList"><a href="projectarchive.html" class="dropdownLinks">Past Archive</a></li>
+								</ul>
+						</li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
 
-		<!-- Intro -->
+		<!-- Home -->
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
 					<header id="headermain">
 						<h2 class="companylogo">3POINT DESIGN</h2>
-						<img src="images/Website-Logo.png">
+						<div class="divwrapper">
+							<hr>
+							<img src="images/Website-Logo.png" alt="3POINT DESIGN LOGO">
+							<hr>
+						</div>
 						<h3 class="h3main">LIGHT UP THE DARK</h3>
 					</header>
 					
 					<footer id="footermain">
-						<a href="#one" class="button style2 down">More</a>
+						<a href="#featured" class="button style2 down">More</a>
 					</footer>
 				</div>
 			</section>
 
-		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>What we do</h2>
+		<!-- Featured -->
+
+			<section id="featured" class="main styleFeatured dark fullscreen">
+				<div class="content center">
+					<header class="center">
+						<h2 class="textStroke">Featured</h2>
 					</header>
-					<h3>Design - Vectorworks Drafter</h3>
-					<p>We use Vectorworks to draft all of our designs. We have 8+ years using this software and currently have a 2020 Vectorworks License. We use the software to bring our vision to life, and provide accurate and crystal clear paperwork, renderings, and patch information. This is our preferred medium to use when formulating and presenting our designs to our clients.</p>
-					<h3>Program - MA Lighting</h3>
-					<p>We use MA Lighting consoles on all of our shows. With 5+ years of experience with this software and hardware, our confidence, knowledge, and troubleshooting skills are unparalleled within the industry. The depth of our knowledge allows us to utilize the many facets of this software to its maximum potential, resulting in simple yet elegant solutions for all sized shows.</p>
-					<h3>Operate - Live Shows</h3>
-					<p>The reason why we are all here. It’s our life blood and motivation. There is nothing more satisfying than seeing a project reach fruition. From envisioning a design to manifesting it into reality, operating our live shows brings us the greatest joy in life. We see all of our projects through the entire process and bring 6+ years of experience to the table.</p>
+					<div>
+						<video controls preload="metadata">
+							<source src="images/Videos/1 - Grex Mega Mash - HD 1080p.mp4#t=1" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<video controls preload="metadata">
+							<source src="images/Videos/2 - So Humble - HD 1080p.mp4#t=1" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
 				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
+					<footer>
+						<a href="#projectArchive" class="button style2 down anchored">Next</a>
+					</footer>
 			</section>
 
-		<!-- Two -->
-			<section id="two" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2 class="center">The mind behind the design:  Spencer A. Michaels</h2>
-					</header>
-					<img class="headshot" src="images/SM-Portfolio-Image.jpg" alt="Spencer Michaels Headshot">
-					<h3 class="center bold">Designer, Programmer, Operator</h3>
-					<p class="aboutme">Spencer Michaels has been working towards his career as a professional light designer/programmer/operator for 10 years now. He received his theatrical lighting design bachelors of arts degree from the University Of Santa Barbara, California In 2014. He was then hired as a member of the ACT Lighting, INC Software Support Team the summer of his graduation. During his time at ACT, he provided MA2 software support, MA2 training, and onsite support for the entire North American entertainment industry region. While at ACT, Spencer also designed, programmed, and operated for a variety of artists, including: Bassnectar, Taylor Swift, Nike, Rebelution, and Elohim.  Spencer has now reached his dream in forming 3Point Design, LLC and aims to provide professional, reliable, and innovative uses of all things that bring light into this world. Let’s light up the dark together. Please feel free to reach out to me at spencermichaels805@gmail.com, or navigate to the bottom of the page to send me a message.</p>
-				</div>
-				<a href="#three" class="button style2 down anchored">Next</a>
-			</section>
 
-		<!-- Three -->
-			<section id="three" class="main style3 primary">
+		<!-- Project Archive -->
+			<section id="projectArchive" class="main style3 dark">
 				<div class="content">
 					<header>
-						<h2 class="textShadow">Project Archive</h2>
+						<h2 class="textStroke">Project Archive</h2>
 						<!-- <p class="bold"></p> -->
 					</header>
 
 					<!-- Gallery  -->
 					
-					<h2 class="projectArchiveTitles textShadow">Bassnectar</h2>
+					<h2 class="projectArchiveTitles textStroke">Bassnectar</h2>
 						<div class="gallery">
 							<article class="from-left">
 								<a href="images/fulls/2-Bassnectar/01-BassNectar.jpg" class="image fit"><img src="images/thumbs/Bassnectar-thumbs/01-BassNectar_tn.jpg" title="" alt=""/></a>
@@ -135,7 +140,7 @@
 							</article>
 						</div>
 
-					<h2 class="projectArchiveTitles textShadow">Rebelution</h2>
+					<h2 class="projectArchiveTitles textStroke">Rebelution</h2>
 						<div class="gallery">
 							<article class="from-left">
 								<a href="images/fulls/3-Rebelution/01-Rebelution.jpg" class="image fit"><img src="images/thumbs/Rebelution-thumbs/01-Rebelution_tn.jpg" title="" alt=""/></a>
@@ -166,35 +171,7 @@
 							</article>
 						</div>
 
-						<h2 class="projectArchiveTitles textShadow">Nike Design Summit</h2>
-						<div class="gallery">
-							<article class="from-left">
-								<a href="images/fulls/4-Nike-Design-Summit/01-Overview Plan.jpg" class="image fit"><img src="images/thumbs/Nike-thumbs/01-Overview Plan_tn.jpg" title="" alt=""/></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/4-Nike-Design-Summit/02-Overview Plan.jpg" class="image fit"><img src="images/thumbs/Nike-thumbs/02-Overview Plan_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/4-Nike-Design-Summit/03-Editorial Hallway.jpg" class="image fit"><img src="images/thumbs/Nike-thumbs/03-Editorial Hallway_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/4-Nike-Design-Summit/04-Womens.jpg" class="image fit"><img src="images/thumbs/Nike-thumbs/04-Womens_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/4-Nike-Design-Summit/05-NSW.jpg" class="image fit"><img src="images/thumbs/Nike-thumbs/05-NSW_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/4-Nike-Design-Summit/06-Lounge.jpg" class="image fit"><img src="images/thumbs/Nike-thumbs/06-Lounge_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/4-Nike-Design-Summit/07-SNKRS.jpg" class="image fit"><img src="images/thumbs/Nike-thumbs/07-SNKRS_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/4-Nike-Design-Summit/08-Performance.jpg" class="image fit"><img src="images/thumbs/Nike-thumbs/08-Performance_tn.jpg" title="" alt="" /></a>
-							</article>
-						</div>
-
-						<h2 class="projectArchiveTitles textShadow">LDI for ACT Lighting</h2>
+						<h2 class="projectArchiveTitles textStroke">LDI for ACT Lighting</h2>
 						<div class="gallery">
 							<article class="from-left">
 								<a href="images/fulls/5-LDI-for-ACT Lighting/00-ACT Perspective.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/00-ACT Perspective_tn.jpg" title="" alt=""/></a>
@@ -212,69 +189,87 @@
 								<a href="images/fulls/5-LDI-for-ACT Lighting/04-Light Plot - Deck.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/04-Light Plot - Deck_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/05-Elevation-A-ACPD-Product-Towers.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/05-Elevation-A-ACPD-Product-Towers_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/05-Power Plan.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/05-Power Plan_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/06-Elevation-B-Light-Power-Frames.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/06-Elevation-B-Light-Power-Frames_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/06-Aryton-Perspective.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/06-Aryton-Perspective_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/07-Aryton-Perspective.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/07-Aryton-Perspective_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/07-Booth-Render-Ayrton.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/07-Booth-Render-Ayrton_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/08-Ayrton-Light-plot.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/08-Ayrton-Light-plot_tn.jpg" title="" alt=""/></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/08-Ayrton.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/08-Ayrton_tn.jpg" title="" alt=""/></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/09-Schematic-Sign-frame.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/09-Schematic-Sign-frame_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/09-Booth-Render-Left-Rear.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/09-Booth-Render-Left-Rear_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/10-Schematic-MA-Table.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/10-Schematic-MA-Table_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/10-Booth-A.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/10-Booth-A_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/11-Booth-Render-Right-Rear.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/11-Booth-Render-Right-Rear_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/11-Booth-B.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/11-Booth-B_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/12-Booth-Render-Right.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/12-Booth-Render-Right_tn_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/12-Booth-Render-Right-Rear.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/12-Booth-Render-Right-Rear_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/13-Booth-Render-Left.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/13-Booth-Render-Left_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/13-Booth-RJ.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/13-Booth-RJ_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/14-Booth-Render-Left-Rear.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/14-Booth-Render-Left-Rear_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/14-Booth RJ Closeup.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/14-Booth RJ Closeup_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/15-ACt-LDI.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/15-ACt-LDI_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/15-Booth-Render-Left.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/15-Booth-Render-Left_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/16-ACT-LDI.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/16-ACT-LDI_tn.jpg" title="" alt=""/></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/16-Booth-Signs.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/16-Booth-Signs_tn.jpg" title="" alt=""/></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/17-ACT-LDI.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/17-ACT-LDI_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/17-Booth-MDG.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/17-Booth-MDG_tn.jpg" title="" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/18-ACT-LDI.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/18-ACT-LDI_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/19-ACT-LDI.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/19-ACT-LDI_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/20-ACT-LDI.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/20-ACT-LDI_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/21-ACT-LDI.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/21-ACT-LDI_tn.jpg" title="" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/5-LDI-for-ACT Lighting/22-ACT-LDI.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/22-ACT-LDI_tn.jpg" title="" alt="" /></a>
+								<a href="images/fulls/5-LDI-for-ACT Lighting/18-Booth-Final.jpg" class="image fit"><img src="images/thumbs/ACT-thumbs/18-Booth-Final_tn.jpg" title="" alt="" /></a>
 							</article>
 						</div>
 				</div>
+				<a href="#services" class="button style2 down anchored">Next</a>
 			</section>
+
+		<!-- Services -->
+		<section id="services" class="main style2 right dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2>What we do</h2>
+				</header>
+				<h3>Design - Vectorworks Drafter</h3>
+				<p>We use Vectorworks to draft all of our designs. We have 8+ years using this software and currently have a 2020 Vectorworks License. We use the software to bring our vision to life, and provide accurate and crystal clear paperwork, renderings, and patch information. This is our preferred medium to use when formulating and presenting our designs to our clients.</p>
+				<h3>Program - MA Lighting</h3>
+				<p>We use MA Lighting consoles on all of our shows. With 5+ years of experience with this software and hardware, our confidence, knowledge, and troubleshooting skills are unparalleled within the industry. The depth of our knowledge allows us to utilize the many facets of this software to its maximum potential, resulting in simple yet elegant solutions for all sized shows.</p>
+				<h3>Operate - Live Shows</h3>
+				<p>The reason why we are all here. It’s our life blood and motivation. There is nothing more satisfying than seeing a project reach fruition. From envisioning a design to manifesting it into reality, operating our live shows brings us the greatest joy in life. We see all of our projects through the entire process and bring 6+ years of experience to the table.</p>
+			</div>
+			<a href="#about" class="button style2 down anchored">Next</a>
+		</section>
+
+		<!-- About -->
+		<section id="about" class="main style2 left dark fullscreen">
+			<div class="content box style2">
+				<header>
+					<h2 class="center">The mind behind the design:  Spencer A. Michaels</h2>
+				</header>
+				<img class="headshot" src="images/SM-Portfolio-Image.jpg" alt="Spencer Michaels Headshot">
+				<h3 class="center bold">Designer, Programmer, Operator</h3>
+				<p class="aboutme">Spencer Michaels has been working towards his career as a professional light designer/programmer/operator for 10 years now. He received his theatrical lighting design bachelors of arts degree from the University Of Santa Barbara, California In 2014. He was then hired as a member of the ACT Lighting, INC Software Support Team the summer of his graduation. During his time at ACT, he provided MA2 software support, MA2 training, and onsite support for the entire North American entertainment industry region. While at ACT, Spencer also designed, programmed, and operated for a variety of artists, including: Bassnectar, Taylor Swift, Nike, Rebelution, and Elohim.  Spencer has now reached his dream in forming 3Point Design, LLC and aims to provide professional, reliable, and innovative uses of all things that bring light into this world. Let’s light up the dark together. Please feel free to reach out to me at spencermichaels805@gmail.com, or navigate to the bottom of the page to send me a message.</p>
+			</div>
+			<a href="#contact" class="button style2 down anchored">Next</a>
+		</section>
 
 		<!-- Contact -->
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
 					<header>
-						<h2 class="textShadow">Say Hello.</h2>
-						<p class="bold textShadow">Get in touch to inquire about working with us</p>
+						<h2 class="textStroke">Say Hello.</h2>
+						<p class="bold textStroke">Get in touch to inquire about working with us</p>
 					</header>
 					<div class="box">
 						<form method="POST" data-netlify="true">

@@ -211,5 +211,18 @@
 				$window.trigger('resize');
 			});
 
+	// Adds dropdown functionality
+		$(document).ready(function () {
+			$('.dropdownMenu').hover(
+			function () {
+				//show submenu
+				$('.dropdown', this).show();
+			}, function () {
+				//hide submenu
+				$('.dropdown', this).hide();
+			});
+		});
+
 })(jQuery);
+
 
