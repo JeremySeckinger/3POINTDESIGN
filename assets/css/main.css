@@ -590,7 +590,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h2 {
-			font-size: 1.5em;
+			font-size: 2em;
 		}
 
 	}
@@ -1843,7 +1843,10 @@ input, select, textarea {
 				transform: translateY(7em);
 			}
 
-		@media screen and (max-width: 480px) {
+
+			/* Commented out to keep regular styling on mobile */
+
+		/* @media screen and (max-width: 480px) {
 
 			.gallery {
 				-moz-flex-wrap: nowrap;
@@ -1860,7 +1863,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-		}
+		} */
 
 /* Header */
 
@@ -2281,19 +2284,18 @@ input, select, textarea {
 				width: 50%;
 				margin-left: 25%;
 				margin-right: 25%;
-				padding-top: 1em;
 				padding-bottom: 1em;
 			}
 	
-			.wraptext {
-				display: block;
-				width: 100%;
-				float: left;
-			}
 			.center {
 				display: block;
 				text-align: center;
-				float: left
+			}
+
+			.aboutme {
+				text-align: left;
+				width: 100%;
+				padding-top: 1em;
 			}
 		}
 
@@ -2496,7 +2498,16 @@ input, select, textarea {
 	font-weight: 900;
 	font-size: 3.25em;
 	margin-top: .5em;
-}
+} 
+
+		@media screen and (max-width: 480px) {
+
+			.h3main {
+				font-size: 2em;
+				margin-top: .75em;
+			}
+
+		}
 
 .companylogo {
 	font-family: 'azonixregular';
@@ -2560,6 +2571,22 @@ video {
 	height: 20em;
 	width: 30em;
 	margin: 0% 2% 3% 2%;
+}
+
+@media screen and (max-width: 480px) {
+	video {
+		display: block;
+		height: 60%;
+		width: 90%;
+		padding-top: 1em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main.styleFeatured {
+		padding-top: 2em;
+	}
+
 }
 
 
