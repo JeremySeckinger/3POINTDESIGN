@@ -2242,7 +2242,7 @@ input, select, textarea {
 
 				.main.style1 h2 {
 					font-size: 4em;
-					-webkit-text-stroke-width: .01em;
+					-webkit-text-stroke-width: .008em;
 					-webkit-text-stroke-color: white;
 				}
 
