@@ -16,6 +16,6 @@ This is a portfolio site for a client's concert lighting design company I'm work
 - [x] Integrate form functionality
 - [ ] Pare down site weight using best practices
       - resize images, remove unnecessary code
-- [ ] Utilize SEO best practices
-- [ ] Run accessibility methods (scoring very poorly on lighthouse)
-- [ ] Optimize for mobile (currently only optimized for desktop with limited media queries)
+- [x] Utilize SEO best practices
+- [x] Run accessibility methods (scoring very poorly on lighthouse)
+- [x] Optimize for mobile (currently only optimized for desktop with limited media queries)
