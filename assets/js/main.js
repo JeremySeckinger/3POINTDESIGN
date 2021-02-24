@@ -121,6 +121,18 @@
 							leave:		function() { $(this).addClass('inactive'); }
 						});
 
+				// featured Galleries addition JS to add functionality to feauturedGallery class
+					$('.featuredGallery')
+							.scrollex({
+							top:		'30vh',
+							bottom:		'30vh',
+							delay:		50,
+							initialize:	function() { $(this).addClass('inactive'); },
+							terminate:	function() { $(this).removeClass('inactive'); },
+							enter:		function() { $(this).removeClass('inactive'); },
+							leave:		function() { $(this).addClass('inactive'); }
+				});
+
 				// Generic sections.
 					$('.main.style1')
 						.scrollex({
@@ -160,6 +172,10 @@
 				// Galleries.
 					$('.gallery')
 						.unscrollex();
+
+				// featured Gallery.--stops animation from left/right for mobile
+					$('.featuredGallery')
+					.unscrollex();
 
 				// Generic sections.
 					$('.main.style1')

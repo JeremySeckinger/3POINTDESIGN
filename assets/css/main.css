@@ -1454,6 +1454,40 @@ input, select, textarea {
 
 		}
 
+		.featuredGallery {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			width: 100%;
+			max-width: 100%;
+			margin: 0 auto 2em auto;
+		}
+	
+			.featuredGallery article {
+				-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+				-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+				-ms-transition: -ms-transform 1s ease, opacity 1s ease;
+				transition: transform 1s ease, opacity 1s ease;
+				-moz-transform: translateX(0);
+				-webkit-transform: translateX(0);
+				-ms-transform: translateX(0);
+				transform: translateX(0);
+				width: 50%;
+				position: relative;
+				opacity: 1.0;
+			}
+
+			.featuredGallery article:nth-last-child(1n) {
+				-moz-transition-delay: 0.05s;
+				-webkit-transition-delay: 0.05s;
+				-ms-transition-delay: 0.05s;
+				transition-delay: 0.05s;
+			}
 /* Gallery */
 
 	.gallery {
@@ -1842,6 +1876,24 @@ input, select, textarea {
 				-ms-transform: translateY(7em);
 				transform: translateY(7em);
 			}
+
+			.featuredGallery.inactive article {
+				opacity: 0;
+			}
+	
+				.featuredGallery.inactive article.from-left {
+					-moz-transform: translateX(-14em);
+					-webkit-transform: translateX(-14em);
+					-ms-transform: translateX(-14em);
+					transform: translateX(-14em);
+				}
+	
+				.featuredGallery.inactive article.from-right {
+					-moz-transform: translateX(14em);
+					-webkit-transform: translateX(14em);
+					-ms-transform: translateX(14em);
+					transform: translateX(14em);
+				}
 
 
 			/* Commented out to keep regular styling on mobile */
@@ -2416,6 +2468,15 @@ input, select, textarea {
 		background-position: center center;
 }
 
+		@media screen and (max-width: 736px) {
+			#projectArchive {
+				background:  url("../../images/portfolio-background.jpeg");
+				background-size: contain;
+				background-attachment: fixed;
+				background-position: center center;
+			}
+		}
+
 /* Added to create separate page for past Archive */
 		#pastArchive {
 			background:  url("../../images/past-archive.jpg");
@@ -2575,7 +2636,25 @@ video {
 	margin: 0% 2% 3% 2%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1170px) {
+	.featuredGallery {
+		display: block;
+		width: 100%;
+	}
+
+	.featuredGallery article {
+		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+    	-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+    	-ms-transition: -ms-transform 1s ease, opacity 1s ease;
+    	transition: transform 1s ease, opacity 1s ease;
+    	-moz-transform: translateX(0);
+    	-webkit-transform: translateX(0);
+    	-ms-transform: translateX(0);
+    	transform: translateX(0);
+    	width: 100%;
+    	position: relative;
+    	opacity: 1.0;
+	}
 	video {
 		display: block;
 		height: 60%;
