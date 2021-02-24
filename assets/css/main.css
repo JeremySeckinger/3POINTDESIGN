@@ -1454,40 +1454,41 @@ input, select, textarea {
 
 		}
 
-		.featuredGallery {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			width: 100%;
-			max-width: 100%;
-			margin: 0 auto 2em auto;
-		}
-	
-			.featuredGallery article {
-				-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-				-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-				-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-				transition: transform 1s ease, opacity 1s ease;
-				-moz-transform: translateX(0);
-				-webkit-transform: translateX(0);
-				-ms-transform: translateX(0);
-				transform: translateX(0);
-				width: 50%;
-				position: relative;
-				opacity: 1.0;
-			}
+/* Added featured gallery class for video resizing | Associated lines: 1881 (transition) 2641 (media query) */
 
-			.featuredGallery article:nth-last-child(1n) {
-				-moz-transition-delay: 0.05s;
-				-webkit-transition-delay: 0.05s;
-				-ms-transition-delay: 0.05s;
-				transition-delay: 0.05s;
-			}
+	.featuredGallery {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto 2em auto;
+	}	
+		.featuredGallery article {
+			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
+			transition: transform 1s ease, opacity 1s ease;
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+			width: 50%;
+			position: relative;
+			opacity: 1.0;
+		}
+		.featuredGallery article:nth-last-child(1n) {
+			-moz-transition-delay: 0.05s;
+			-webkit-transition-delay: 0.05s;
+			-ms-transition-delay: 0.05s;
+			transition-delay: 0.05s;
+		}
+
 /* Gallery */
 
 	.gallery {
@@ -1877,23 +1878,24 @@ input, select, textarea {
 				transform: translateY(7em);
 			}
 
-			.featuredGallery.inactive article {
-				opacity: 0;
+/* added for featured gallery for video transitions */
+
+		.featuredGallery.inactive article {
+			opacity: 0;
+		}
+
+			.featuredGallery.inactive article.from-left {
+				-moz-transform: translateX(-14em);
+				-webkit-transform: translateX(-14em);
+				-ms-transform: translateX(-14em);
+				transform: translateX(-14em);
+			}	
+			.featuredGallery.inactive article.from-right {
+				-moz-transform: translateX(14em);
+				-webkit-transform: translateX(14em);
+				-ms-transform: translateX(14em);
+				transform: translateX(14em);
 			}
-	
-				.featuredGallery.inactive article.from-left {
-					-moz-transform: translateX(-14em);
-					-webkit-transform: translateX(-14em);
-					-ms-transform: translateX(-14em);
-					transform: translateX(-14em);
-				}
-	
-				.featuredGallery.inactive article.from-right {
-					-moz-transform: translateX(14em);
-					-webkit-transform: translateX(14em);
-					-ms-transform: translateX(14em);
-					transform: translateX(14em);
-				}
 
 
 			/* Commented out to keep regular styling on mobile */
