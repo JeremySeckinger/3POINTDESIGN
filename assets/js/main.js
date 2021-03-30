@@ -239,6 +239,26 @@
 			});
 		});
 
+	// Video Mute Toggle
+
+	// $('#muteToggle').click(function(){
+	// 	$('video')[0].muted ^= 1;
+	// 	$(this).toggleClass('unmute mute');
+	// });
+
 })(jQuery);
 
+const btn = document.getElementById('mute'),
+    video = document.querySelector('video');
 
+btn.addEventListener('click', () => {
+if (btn.value === 'unmuted') {
+    btn.value = 'muted';
+    btn.innerHTML = '<i class="fas fa-volume-up">';
+    video.muted = true;
+} else {
+    btn.value = 'unmuted';
+    btn.innerHTML = '<i class="fas fa-volume-mute">';
+    video.muted = false;
+}
+});
