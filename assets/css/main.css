@@ -731,6 +731,14 @@ input, select, textarea {
 				margin-left: -1.25em;
 			}
 
+			input[type="button"].down.anchored.circle,
+			input[type="submit"].down.anchored.circle,
+			input[type="reset"].down.anchored.circle,
+			.button.down.anchored.circle,
+			button.down.anchored.circle {
+				border-radius: 3.5em;
+			} 
+
 		input[type="button"].anchored,
 		input[type="submit"].anchored,
 		input[type="reset"].anchored,
@@ -2532,6 +2540,8 @@ input, select, textarea {
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -1;
+	background-size: contain;
+	overflow: auto;
 }
 
 .video-container {

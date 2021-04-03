@@ -239,26 +239,25 @@
 			});
 		});
 
-	// Video Mute Toggle
+	// Triggers fixed background to change video just before services section
+	
+		var initialSrc = "images/Network-Fullscreen.mp4";
+		var scrollSrc = "images/Black-13495.mp4";
+		
+		$(window).on('scroll', function() {
+		var value = $(this).scrollTop();
+		var servicesValue = $("#scrollChange").offset().top
 
-	// $('#muteToggle').click(function(){
-	// 	$('video')[0].muted ^= 1;
-	// 	$(this).toggleClass('unmute mute');
-	// });
+		// if (value <= (servicesValue - 120) && value >= (servicesValue - 150))
+		// 	$("#project-archive-video").attr("src", initialSrc);
+
+		if ((value >= (servicesValue - 110)) && (value <= (servicesValue - 70)))
+			$("#project-archive-video").attr("src", scrollSrc);
+
+		else if (value <= (servicesValue - 120) && value >= (servicesValue - 150))
+			$("#project-archive-video").attr("src", initialSrc);
+
+			console.log(servicesValue.top);
+		})
 
 })(jQuery);
-
-const btn = document.getElementById('mute'),
-    video = document.querySelector('video');
-
-btn.addEventListener('click', () => {
-if (btn.value === 'unmuted') {
-    btn.value = 'muted';
-    btn.innerHTML = '<i class="fas fa-volume-mute">';
-    video.muted = true;
-} else {
-    btn.value = 'unmuted';
-    btn.innerHTML = '<i class="fas fa-volume-up">';
-    video.muted = false;
-}
-});
