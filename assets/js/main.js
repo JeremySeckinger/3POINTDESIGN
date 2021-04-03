@@ -254,11 +254,11 @@ const btn = document.getElementById('mute'),
 btn.addEventListener('click', () => {
 if (btn.value === 'unmuted') {
     btn.value = 'muted';
-    btn.innerHTML = '<i class="fas fa-volume-up">';
+    btn.innerHTML = '<i class="fas fa-volume-mute">';
     video.muted = true;
 } else {
     btn.value = 'unmuted';
-    btn.innerHTML = '<i class="fas fa-volume-mute">';
+    btn.innerHTML = '<i class="fas fa-volume-up">';
     video.muted = false;
 }
 });

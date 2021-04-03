@@ -667,6 +667,12 @@ input, select, textarea {
 
 		}
 
+	.contact-box {
+		background: rgba(0, 0, 0, .01);
+		color: white;
+		padding: 2em;
+	}
+
 /* Button */
 
 	input[type="button"],
@@ -2228,7 +2234,8 @@ input, select, textarea {
 			}
 
 			.main.dark .button.style2 {
-				border-color: #ffffff;
+				border-color: gray;
+				background-color:rgba(185, 186, 187, 0.4)
 			}
 
 				.main.dark .button.style2:hover {
@@ -2512,7 +2519,8 @@ input, select, textarea {
 		} */
 
 #pastArchive {
-	padding-top: 2em;
+	padding-top: .5em;
+	padding-bottom: 2em;
 }
 
 /* Services */
@@ -2615,13 +2623,25 @@ input, select, textarea {
 	justify-content: center;
 }
 
+.fa-volume-up {
+	color: white;
+}
+
+.fa-volume-mute {
+	color: white;
+}
+
+.mute-button {
+	background-color: black;
+}
+
 /* replicates desired logo style with lines next to image equal to company name width */
 
 hr {
 	display: inline-block;
 	width: 14em;
 	height: .1em;
-	border: 2px solid white;
+	border: 2px solid black;
 	margin: 0 2em 0 2em;
 }
 
@@ -2695,22 +2715,4 @@ hr {
 		padding-top: 2em;
 	}
 
-}
-
-
-.video-background {
-	position: relative;
-	overflow: hidden;
-	width: 100vw;
-	height: 100vh;
-}
-
-.video-background iframe {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 100vw;
-	height: 100vh;
-	transform: translate(-50%, -50%);
-	z-index: 0;
 }
