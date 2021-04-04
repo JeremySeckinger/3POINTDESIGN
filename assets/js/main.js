@@ -240,7 +240,7 @@
 		});
 
 	// Triggers fixed background to change video just before services section
-	
+
 		var initialSrc = "images/Network-Fullscreen.mp4";
 		var scrollSrc = "images/Black-13495.mp4";
 		
@@ -261,3 +261,17 @@
 		})
 
 })(jQuery);
+
+//Mute button for embedded videos--may remove if not used
+
+// btn.addEventListener('click', () => {
+// 	if (btn.value === 'unmuted') {
+// 		btn.value = 'muted';
+// 		btn.innerHTML = '<i class="fas fa-volume-mute">';
+// 		video.muted = true;
+// 	} else {
+// 		btn.value = 'unmuted';
+// 		btn.innerHTML = '<i class="fas fa-volume-up">';
+// 		video.muted = false;
+// 	}
+// 	});
