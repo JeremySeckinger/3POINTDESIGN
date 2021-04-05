@@ -25,10 +25,31 @@ The site has been evolving as the client wishes to add new features. One tricky 
 - [x] Optimize for mobile (currently only optimized for desktop with limited media queries)
 
 ### Screenshots
+
+#### Current Live (Version 3):
+
+**Home Page**
+
+<img src="https://i.imgur.com/PkobUjK.jpg">
+
+**Featured Lighting Design Video**
+
+<img src="https://i.imgur.com/ZOxgHIX.png">
+
+**Project Archive Photo Gallery**
+
+<img src="https://i.imgur.com/nhfENkb.png">
+
+**Services Section**
+
+<img src="https://i.imgur.com/IlQvkhw.png">
+
+**Contact form**
+
+<img src="https://i.imgur.com/h5uvar0.png">
+
+
 (Apologies for the low quality gif's, necessary evil)
-
-**Current Live (Version 3):**
-
 
 <img src="https://media.giphy.com/media/6YmdDO1wIXJ1Gih9hl/giphy-downsized.gif">
 
