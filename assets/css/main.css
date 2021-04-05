@@ -2511,14 +2511,14 @@ input, select, textarea {
 
 
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) {
 			#projectArchive {
 				background:  url("../../images/portfolio-background.jpeg");
 				background-size: contain;
 				background-attachment: fixed;
 				background-position: center center;
 			}
-		}
+		} */
 
 /* Added to create separate page for past Archive */
 		/* #pastArchive {
