@@ -9,7 +9,7 @@
 
 ## Description
 
-This is a portfolio site for a client's concert lighting design company I'm working on. This is the first client site I have hosted on netlify and deployed through GitHub, which has been tremendous. The site uses a mix of Javascript, jQuery, and CSS/SCSS to light it up. My main focus was using images that really popped, and I wanted to provide clean, smooth transitions with a very open flow to the page. The image galleries use the jquery poptrox plugin, which has been fun to integrate with my own retooling of it. Form functionality is handily serviced by netlify, so prospective clients are able to submit a form directly from the site to my client, and they are able to attach files with the message too. 
+This is a portfolio site for a client's concert lighting design company I'm working on. I have hosting done through and continuously deployed through GitHub, which has been tremendous. The site uses a mix of Javascript, jQuery, and CSS/SCSS to light it up. My main focus was using images that really popped, and I wanted to provide clean, smooth transitions with a very open flow to the page. The image galleries use the jquery poptrox plugin, which has been fun to integrate with my own retooling of it. Form functionality is handily serviced by netlify, so prospective clients are able to submit a form directly from the site to my client, and they are able to attach files with the message too. 
 
 ### Updates
 
